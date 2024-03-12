@@ -11,6 +11,15 @@ export default defineConfig({
       { text: '前端架构', link: '/architecture/mvc-mvp-mvvm.md' }
     ],
 
+    outline: {
+      level: [2, 6],
+      label: '目录'
+    },
+
+    search: {
+      provider: 'local'
+    },
+
     sidebar: [
       {
         text: '前端架构',
@@ -21,6 +30,12 @@ export default defineConfig({
           { text: 'Clean Architecture For Angular', link: '/architecture/clean-architecture-angular.md' },
           { text: 'Clean Architecture For Vue', link: '/architecture/clean-architecture-vue.md' },
 
+        ]
+      },
+      {
+        text: '最佳实践',
+        items: [
+          { text: 'test', link: '/architecture/mvc-mvp-mvvm.md' },
         ]
       }
     ],

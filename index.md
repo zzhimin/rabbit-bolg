@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "blog log"
+  name: "work and life log"
   tagline: 记录工作记录日常
   actions:
     - theme: brand
@@ -11,11 +11,11 @@ hero:
       link: /architecture/mvc-mvp-mvvm.md
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: web前端
+    details: 大龄程序猿，在福州搬砖
+  - title: 记录工作
+    details: 工作日常记录
+  - title: 记录生活
+    details: 生活日常记录
 ---
 
