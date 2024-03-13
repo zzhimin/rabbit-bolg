@@ -24,7 +24,6 @@ class TodoView {
     this.input = document.getElementById("todoInput2");
     this.addTodoButton = document.getElementById("addBtn2");
     this.todoList2 = document.getElementById("todoList2");
-    this.input.focus();
   }
   addTodoHandler(handler) {
     this.addTodoButton.onclick = handler;
@@ -56,7 +55,6 @@ class TodoPresenter {
     if (todoText) {
       const newTodos = this.model.addTodo(todoText);
       this.view.input.value = '';
-      this.view.input.focus();
       this.view.render(newTodos);
     }
   }
@@ -83,15 +81,3 @@ onMounted(() => {
     <ul id="todoList2"></ul>
   </div>
 </template>
-
-<style module>
-input {
-  border: 1px solid #000;
-  width: 400px;
-  margin-right: 10px;
-}
-button {
-  border: 1px solid #ccc;
-  padding: 0px 10px;
-}
-</style>

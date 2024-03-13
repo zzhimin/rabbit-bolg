@@ -28,16 +28,3 @@ const removeTodo = (index) => {
     </ul>
   </div>
 </template>
-
-<style module>
-input {
-  border: 1px solid #000;
-  width: 400px;
-  margin-right: 10px;
-}
-
-button {
-  border: 1px solid #ccc;
-  padding: 0px 10px;
-}
-</style>
