@@ -8,7 +8,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '主页', link: '/' },
-      { text: '前端架构', link: '/architecture/mvc-mvp-mvvm.md' }
+      { text: '前端架构', link: '/architecture/架构演变史.md' }
     ],
 
     outline: {
@@ -22,10 +22,11 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: '前端架构',
+        text: 'Architecture',
         items: [
+          { text: '架构演变史', link: '/architecture/架构演变史.md' },
           { text: 'MVC、MVP、MVVM', link: '/architecture/mvc-mvp-mvvm.md' },
-          { text: 'Clean Architecture', link: '/architecture/clean-architecture.md' },
+          { text: 'The Clean Architecture', link: '/architecture/clean-architecture.md' },
           { text: 'Clean Architecture For Frontend', link: '/architecture/clean-architecture-frontend.md' },
           { text: 'Clean Architecture For Angular', link: '/architecture/clean-architecture-angular.md' },
           { text: 'Clean Architecture For Vue', link: '/architecture/clean-architecture-vue.md' },
@@ -33,7 +34,7 @@ export default defineConfig({
         ]
       },
       {
-        text: '最佳实践',
+        text: 'Use Cases',
         items: [
           { text: 'test', link: '/architecture/mvc-mvp-mvvm.md' },
         ]

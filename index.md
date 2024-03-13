@@ -8,7 +8,7 @@ hero:
   actions:
     - theme: brand
       text: 前端架构
-      link: /architecture/mvc-mvp-mvvm.md
+      link: /architecture/架构演变史.md
 
 features:
   - title: web前端
@@ -18,4 +18,3 @@ features:
   - title: 记录生活
     details: 生活日常记录
 ---
-
