@@ -56,7 +56,6 @@ class TodoView {
     this.input = document.getElementById("todoInput");
     this.addTodoButton = document.getElementById("addBtn");
     this.todoList = document.getElementById("todoList");
-    this.input.focus();
 
   }
   render(todos) {
@@ -93,12 +92,11 @@ class TodoController {
     this.view.addTodoButton.addEventListener('click', () => this.addTodo());
     this.view.todoList.addEventListener('click', (event) => this.removeTodo(event));
   }
-  addTodo () {
+  addTodo() {
     const todoText = this.view.input.value.trim();
     if (todoText) {
       this.model.addTodo(todoText);
       this.view.input.value = '';
-      this.view.input.focus();
       this.view.render(this.model.todos);
     }
   }
@@ -181,7 +179,6 @@ class TodoView {
     this.input = document.getElementById("todoInput2");
     this.addTodoButton = document.getElementById("addBtn2");
     this.todoList2 = document.getElementById("todoList2");
-    this.input.focus();
   }
   addTodoHandler(handler) {
     this.addTodoButton.onclick = handler;
@@ -231,7 +228,6 @@ class TodoPresenter {
     if (todoText) {
       const newTodos = this.model.addTodo(todoText);
       this.view.input.value = '';
-      this.view.input.focus();
       this.view.render(newTodos);
     }
   }
